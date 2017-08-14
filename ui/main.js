@@ -6,7 +6,15 @@ element.innerHTML="New Html";
 
 //move image
 var img=document.getElementById("button");
+var marginLeft=0;
+
+function moveRight()
+{
+    marginLeft=marginLeft+1;
+    madi.style.marginLeft=marginLeft + 'px';
+}
+
 img.onclick=function()
 {
-    madi.style.marginLeft='200px';
+    var interval=setInterval(moveRight,50);
 };
