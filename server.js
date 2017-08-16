@@ -20,7 +20,7 @@ app.get('/article3',function(req,res)
 {
     res.send("This is article 3");
 });
-
+//counter
 var counter=0;
 app.get('/counter',function(req,res)
 {
